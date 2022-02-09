@@ -99,7 +99,7 @@ body {
 
 .danger.error {
   transform: scale(1);
-  color: var(--main-color);
+  color: var(--white);
   background: var(--color-5);
 }
 .success.error {
