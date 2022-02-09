@@ -31,7 +31,7 @@ UI.prototype.addCar = function(car){
     deleteBtn.addEventListener('click', removeCar)
     table.appendChild(row);
    
-    clearBtn.addEventListener('mouseup', clearList);
+    clearBtn.addEventListener('click', clearList);
 
 
     if(table.childElementCount >= 1){
@@ -41,7 +41,7 @@ UI.prototype.addCar = function(car){
     }
 }
 
-UI.prototype.showError = function(message, color){
+UI.prototype.showAlert = function(message, color){
     const error = document.querySelector('.error');
     error.classList.add(color);
     error.textContent = message
@@ -105,7 +105,7 @@ form.addEventListener('submit', (e) =>{
 
     if (!brand || !model || !year ){
         const ui = new UI;
-        ui.showError('Fields can not be empty', 'danger');
+        ui.showAlert('Fields can not be empty', 'danger');
     } else {
         let car = new Car(brand, model, year);
 
@@ -113,7 +113,7 @@ form.addEventListener('submit', (e) =>{
         ui.addCar(car);
         ui.clearInput();
         ui.addToLS(car)
-        ui.showError('car added to list', 'success');
+        ui.showAlert('car added to list', 'success');
     }
 
     e.preventDefault()
@@ -132,7 +132,7 @@ function removeCar(e){
 
     const ui = new UI;
 
-    ui.showError('car removed', 'danger');
+    ui.showAlert('car removed', 'danger');
 
     const Year = e.target.parentElement.previousElementSibling.textContent
     ui.deleteCarsFromLs(Year);
@@ -144,10 +144,11 @@ function clearList(e){
     while (table.firstElementChild.nextElementSibling){
         table.removeChild(table.firstElementChild.nextElementSibling);  
     }
-    const ui = new UI
+    
     e.target.classList.remove('show');
     localStorage.clear();
-    ui.showError('car list cleared', 'danger');
+    const ui = new UI
+    ui.showAlert('car list cleared', 'danger');
 }
 
 

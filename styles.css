@@ -101,7 +101,7 @@ body {
 .danger.error {
   transform: scale(1);
   color: var(--main-color);
-  background: red;
+  background: var(--color-5);
 }
 .success.error {
   transform: scale(1);
@@ -207,6 +207,8 @@ body {
   font-weight: bolder;
   text-transform: capitalize;
   cursor: pointer;
+  transform: scale(0);
+  transition: transform 1000ms ease-in-out;
 }
 
 .list-effects .show.clear-list {
@@ -275,8 +277,13 @@ body {
     height: 100vh;
   }
 
+  .error {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+
   .list-effects .clear-list {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
 
   .car-list-table:last-child {
