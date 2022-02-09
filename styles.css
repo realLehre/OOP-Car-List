@@ -207,14 +207,8 @@ body {
   font-weight: bolder;
   text-transform: capitalize;
   cursor: pointer;
-  transition: all 1000ms ease-in-out;
-  transform: scale(0);
 }
-.list-effects .clear-list:hover {
-  transform: scale(1.05);
-  background: var(--color-4);
-  color: var(--color-3);
-}
+
 .list-effects .show.clear-list {
   transform: scale(1);
 }
@@ -283,9 +277,6 @@ body {
 
   .list-effects .clear-list {
     font-size: 0.5rem;
-  }
-  .disabled {
-    pointer-events: none;
   }
 
   .car-list-table:last-child {
