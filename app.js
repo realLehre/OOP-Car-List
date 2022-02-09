@@ -99,6 +99,7 @@ function getLocalStorage(){
 const form = document.querySelector('.form');
 form.addEventListener('submit', (e) =>{
   
+    // declare input fields
     const brand = document.querySelector('#brand').value,
           model = document.querySelector('#model').value,  
           year = document.querySelector('#year').value;
@@ -107,8 +108,10 @@ form.addEventListener('submit', (e) =>{
         const ui = new UI;
         ui.showAlert('Fields can not be empty', 'danger');
     } else {
+        // instantiate new car
         let car = new Car(brand, model, year);
 
+        // instantiate new UI
         const ui = new UI;
         ui.addCar(car);
         ui.clearInput();

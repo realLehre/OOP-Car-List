@@ -108,6 +108,7 @@ window.addEventListener('DOMContentLoaded', storeToLS.displayCars);
 const form = document.querySelector('.form');
 form.addEventListener('submit', (e) =>{
   
+    // declare input fields
     const brand = document.querySelector('#brand').value,
           model = document.querySelector('#model').value,  
           year = document.querySelector('#year').value;
