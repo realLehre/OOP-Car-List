@@ -7,7 +7,7 @@ window.addEventListener('load', () =>{
 
 class Car{
     constructor(brand, model, year){
-        this.Brand = brand,
+        this.Brand = brand.toUpperCase(),
         this.Model = model,
         this.Year = year;
     }
