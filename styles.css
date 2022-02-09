@@ -93,13 +93,14 @@ body {
 
 .error-message {
   font-size: 1rem;
+  font-weight: bolder;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
 
 .danger.error {
   transform: scale(1);
-  color: var(--color-3);
+  color: var(--main-color);
   background: var(--color-5);
 }
 .success.error {
