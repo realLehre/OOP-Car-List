@@ -148,9 +148,3 @@ window.addEventListener('load', () =>{
     loader.classList.add('hide');
 })
 
-const inputs = document.querySelectorAll('input');
-inputs.forEach(input =>{
-    input.addEventListener('click', ()=>{
-        document.querySelector('.form').classList.toggle('slide');
-    })
-})

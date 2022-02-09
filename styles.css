@@ -120,25 +120,6 @@ body {
   margin-top: 20px;
 }
 
-.form div:not(:last-child) {
-  position: relative;
-}
-.form div:not(:last-child)::after {
-  position: absolute;
-  content: '';
-  top: 24px;
-  left: 0;
-  height: 30.33px;
-  width: 0;
-  background: red;
-  border-radius: 5px;
-  z-index: 1000;
-  transition: all 1000ms ease-in-out;
-}
-.slide.form div:not(:last-child)::after {
-  width: 100%;
-}
-
 .form label {
   font-size: 1rem;
   text-transform: capitalize;
