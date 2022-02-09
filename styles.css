@@ -294,6 +294,10 @@ body {
     font-size: 0.65rem;
   }
 
+  car-list table {
+    border-spacing: 2px 6px;
+  }
+
   .car-list-table:last-child {
     padding-bottom: 40px;
   }
