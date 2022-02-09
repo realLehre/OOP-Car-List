@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Car List Project</title>
+  </head>
+  <body>
+    <div class="preloader">
+      <img src="./preloader.gif" alt="" />
+    </div>
+    <section class="main">
+      <p class="page-heading">add car to list</p>
+      <div class="error show"></div>
+      <form class="form">
+        <div class="brand-input">
+          <label for="brand">brand</label> <input type="text" id="brand" />
+        </div>
+        <div class="model-input">
+          <label for="brand">model</label> <input type="text" id="model" />
+        </div>
+        <div class="year-input">
+          <label for="brand">year</label>
+          <input inputmode="numeric" type="number" id="year" />
+        </div>
+        <div class="submit">
+          <button type="submit" class="submit-btn">add car</button>
+        </div>
+      </form>
+
+      <div class="break"></div>
+
+      <div class="list-effects">
+        <p class="page-heading heading-2">car list</p>
+        <button class="clear-list">clear car list</button>
+      </div>
+
+      <div class="car-list">
+        <table class="car-list-table">
+          <tr class="car-list-heading">
+            <th>brand</th>
+            <th>model</th>
+            <th>year</th>
+          </tr>
+          <!-- <tr class="car-details">
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td>placeholder</td>
+            <td class="delete"><i class="fa fa-trash" aria-hidden="true"></i></td>
+            </tr> -->
+        </table>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
