@@ -1,3 +1,9 @@
+// preloader
+const loader = document.querySelector('.preloader');
+window.addEventListener('load', () =>{
+    loader.classList.add('hide');
+})
+
 // book constructor
 function Car(brand, model, year){
     this.Brand = brand,
@@ -25,7 +31,8 @@ UI.prototype.addCar = function(car){
     deleteBtn.addEventListener('click', removeCar)
     table.appendChild(row);
    
-    clearBtn.addEventListener('mousedown', clearList);
+    clearBtn.addEventListener('mouseup', clearList);
+
 
     if(table.childElementCount >= 1){
         clearBtn.classList.add('show');
@@ -137,14 +144,13 @@ function clearList(e){
     while (table.firstElementChild.nextElementSibling){
         table.removeChild(table.firstElementChild.nextElementSibling);  
     }
+    const ui = new UI
     e.target.classList.remove('show');
     localStorage.clear();
     ui.showError('car list cleared', 'danger');
 }
 
-// preloader
-const loader = document.querySelector('.preloader');
-window.addEventListener('load', () =>{
-    loader.classList.add('hide');
-})
+
+
+
 

@@ -284,6 +284,9 @@ body {
   .list-effects .clear-list {
     font-size: 0.5rem;
   }
+  .disabled {
+    pointer-events: none;
+  }
 
   .car-list-table:last-child {
     padding-bottom: 40px;
