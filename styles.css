@@ -300,6 +300,11 @@ body {
     border-spacing: 4px 4px;
   }
 
+  .car-list table td {
+    font-size: 0.7rem;
+    border-radius: 3px;
+  }
+
   .car-list-table:last-child {
     padding-bottom: 40px;
   }
