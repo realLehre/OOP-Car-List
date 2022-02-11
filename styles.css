@@ -259,7 +259,7 @@ body {
   font-size: 0.8rem;
   text-transform: capitalize;
   letter-spacing: 1.5px;
-  padding: 20px 10px 10px;
+  padding: 10px 10px 10px;
   color: white;
   border-radius: 5px;
 }
@@ -296,8 +296,8 @@ body {
     font-size: 0.65rem;
   }
 
-  car-list table {
-    border-spacing: 2px 6px;
+  .car-list table {
+    border-spacing: 4px 4px;
   }
 
   .car-list-table:last-child {
